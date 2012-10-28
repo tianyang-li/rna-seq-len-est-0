@@ -1,8 +1,11 @@
-rna-seq-len-est-0
-=================
+# rna-seq-len-est-0
 
 Estimate a transcript's length from RNA-Seq data
 
-Usage
------
+## Usage
+
+This program uses [BLAT](http://genome.ucsc.edu/FAQ/FAQblat.html) to align reads to a reference genome, 
+and estimate a transcript's start and end site.
+
+
 
