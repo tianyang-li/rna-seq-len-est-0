@@ -19,6 +19,10 @@ import getopt
 import sys
 
 def main():
+    ref_fasta = None
+    if (not ref_fasta):
+        print >> sys.stderr, "missing options!"
+        sys.exit(1)
     
 if __name__ == '__main__':
     main()    
