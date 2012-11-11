@@ -18,6 +18,8 @@
 import getopt
 import sys
 
+from util import blat_0
+
 def main():
     try:
         opts, _ = getopt.getopt(sys.argv[1:], '', [])
