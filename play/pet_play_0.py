@@ -22,7 +22,10 @@ from util import blat_0
 
 def main():
     try:
-        opts, _ = getopt.getopt(sys.argv[1:], '', [])
+        opts, _ = getopt.getopt(sys.argv[1:],
+                                '',
+                                ['read1', 'read2',
+                                 'psl1', 'psl2'])
     except getopt.GetoptError as err:
         print >> sys.stderr, str(err)
         sys.exit(1)
