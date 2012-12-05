@@ -16,29 +16,9 @@
 #  You should have received a copy of the GNU General Public License
 
 
-import getopt
-import sys
+"""
+coverage based filtering of 
+RNA-PET BLAT results
+"""
 
-from util.blat_0 import read_psl
 
-
-def main():
-    try:
-        opts, _ = getopt.getopt(sys.argv[1:], '', ['psl='])
-    except getopt.GetoptError as err:
-        print >> sys.stderr, str(err)
-        sys.exit(1)
-        
-    psl_file = None
-    
-    for opt, arg in opts:
-        if opt == '--psl':
-            psl_file = arg
-    
-    if (not psl_file):
-        print >> sys.stderr, "missing"
-        sys.exit(1)
-    
-    
-if __name__ == '__main__':
-    main()    
