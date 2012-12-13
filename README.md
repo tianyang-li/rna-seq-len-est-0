@@ -7,6 +7,8 @@ Statistical etimation a transcript's length from RNA-Seq data
 This program uses [TopHat](http://tophat.cbcb.umd.edu/) to align reads to a reference genome, 
 and estimate a transcript's start and end site.
 
+[BEDtools](http://code.google.com/p/bedtools/) is required.
+
 Utilities from [https://github.com/tianyang-li/misc-bioinfo-0](https://github.com/tianyang-li/misc-bioinfo-0) are used for data preprocessing. 
 
 ***
