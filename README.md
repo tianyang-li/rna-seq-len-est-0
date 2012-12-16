@@ -23,4 +23,7 @@ This project is a continuation of the following:
 
 * [http://code.google.com/p/meta-transcriptome/](http://code.google.com/p/meta-transcriptome/)
 
+***
+
+This project is done under the supervision of [Dr. Xuegong Zhang](http://bioinfo.au.tsinghua.edu.cn/member/xzhang/XZhang_English.htm) and [Dr. Rui Jiang](http://bioinfo.au.tsinghua.edu.cn/member/ruijiang/english/index.html).
 
