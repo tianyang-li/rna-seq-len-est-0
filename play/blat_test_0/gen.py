@@ -23,9 +23,10 @@ from random import randint, choice
 
 def main():
     l, r, n = None, None, None
+    out_pref = None
     
     try:
-        opts, _ = getopt.getopt(sys.argv[1:], 'l:r:n:')
+        opts, _ = getopt.getopt(sys.argv[1:], 'l:r:n:p:')
     except getopt.GetoptError as err:
         print >> sys.stderr, str(err)
         sys.exit(1)
@@ -40,10 +41,18 @@ def main():
         if opt == '-n':
             # # of reads
             n = int(arg)
+        if opt == '-p':
+            # output file prefix
+            out_pref = arg
     
-    if (not l or not r or not n):
+    if (not l 
+        or not r 
+        or not n
+        or not out_pref):
         print >> sys.stderr, "missing"
         sys.exit(1)
+    
+    subject = "".join(choice("ACGT") for _ in xrange(l))
 
 
 if __name__ == '__main__':
