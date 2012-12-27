@@ -52,7 +52,18 @@ def main():
         print >> sys.stderr, "missing"
         sys.exit(1)
     
-    subject = "".join(choice("ACGT") for _ in xrange(l))
+    s_seq = "".join(choice("ACGT") for _ in xrange(l))
+    
+    with open("%s_s.fasta", 'w') as fout_s_seq:
+        fout_s_seq.write(">s\n%s\n" % s_seq)
+        
+    with open("%s_q.fasta", 'w') as fout_q_seq:
+        for _ in xrange(n):
+            start_pos = randint(0, l - r)
+            fout_q_seq.write(">%d.%d\n%s\n" 
+                             % (start_pos,
+                                start_pos + r,
+                                s_seq[start_pos, start_pos + r]))
 
 
 if __name__ == '__main__':
