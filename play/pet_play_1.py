@@ -16,11 +16,6 @@
 #  You should have received a copy of the GNU General Public License
 
 
-"""
-paired end
-"""
-
-
 import getopt
 import sys
 
@@ -32,8 +27,8 @@ def main():
     try:
         opts, _ = getopt.getopt(sys.argv[1:],
                                 '',
-                                ['read1=', 'read2=',
-                                 'psl1=', 'psl2=', 'gtf='])
+                                ['read=',
+                                 'psl=', 'gtf='])
     except getopt.GetoptError as err:
         print >> sys.stderr, str(err)
         sys.exit(1)
@@ -41,4 +36,6 @@ def main():
 
 if __name__ == '__main__':
     main()
-
+    
+    
+    
