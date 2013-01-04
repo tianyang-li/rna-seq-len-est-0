@@ -14,6 +14,8 @@ This program requires
 
 * [BEDtools](http://code.google.com/p/bedtools/) 
 
+* Assembly Assisted RNA-Seq Alignment ([https://github.com/tianyang-li/aarsa](https://github.com/tianyang-li/aarsa))
+
 * Utilities from [https://github.com/tianyang-li/misc-bioinfo-0](https://github.com/tianyang-li/misc-bioinfo-0)
 
 ***
